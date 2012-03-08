@@ -7,3 +7,5 @@ It covered the basics of Objective-C, memory management, and a sample applicatio
 This repo contains the sample code.
 
 Please check out the presentation at http://vicpenap.github.com/ios_seminar.
+
+The images and quotes included in the presentation are obtained from Apple Documentation.
