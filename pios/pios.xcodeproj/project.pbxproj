@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5723B35D14ED1F4500FB5ED3 /* UsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5723B35B14ED1F4500FB5ED3 /* UsersViewController.m */; };
+		5723B35E14ED1F4500FB5ED3 /* UsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5723B35C14ED1F4500FB5ED3 /* UsersViewController.xib */; };
+		5723B36214ED230B00FB5ED3 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5723B36114ED230B00FB5ED3 /* User.m */; };
+		5723B36614ED250A00FB5ED3 /* TweetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5723B36414ED250A00FB5ED3 /* TweetsViewController.m */; };
+		5723B36714ED250A00FB5ED3 /* TweetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5723B36514ED250A00FB5ED3 /* TweetsViewController.xib */; };
+		5723B36B14ED2BB700FB5ED3 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5723B36A14ED2BB700FB5ED3 /* JSONKit.m */; };
+		579346F514ED0D17000920DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579346F414ED0D17000920DA /* UIKit.framework */; };
+		579346F714ED0D17000920DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579346F614ED0D17000920DA /* Foundation.framework */; };
+		579346F914ED0D17000920DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579346F814ED0D17000920DA /* CoreGraphics.framework */; };
+		579346FF14ED0D17000920DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 579346FD14ED0D17000920DA /* InfoPlist.strings */; };
+		5793470114ED0D17000920DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793470014ED0D17000920DA /* main.m */; };
+		5793470514ED0D17000920DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793470414ED0D17000920DA /* AppDelegate.m */; };
+		5793470D14ED0D18000920DA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5793470C14ED0D18000920DA /* SenTestingKit.framework */; };
+		5793470E14ED0D18000920DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579346F414ED0D17000920DA /* UIKit.framework */; };
+		5793470F14ED0D18000920DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579346F614ED0D17000920DA /* Foundation.framework */; };
+		5793471714ED0D18000920DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5793471514ED0D18000920DA /* InfoPlist.strings */; };
+		5793471A14ED0D18000920DA /* piosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793471914ED0D18000920DA /* piosTests.m */; };
+		5793472614ED0D52000920DA /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793472514ED0D52000920DA /* Tweet.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5793471014ED0D18000920DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 579346E714ED0D17000920DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 579346EF14ED0D17000920DA;
+			remoteInfo = pios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5723B35A14ED1F4500FB5ED3 /* UsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersViewController.h; sourceTree = "<group>"; };
+		5723B35B14ED1F4500FB5ED3 /* UsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersViewController.m; sourceTree = "<group>"; };
+		5723B35C14ED1F4500FB5ED3 /* UsersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UsersViewController.xib; sourceTree = "<group>"; };
+		5723B36014ED230B00FB5ED3 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		5723B36114ED230B00FB5ED3 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		5723B36314ED250A00FB5ED3 /* TweetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetsViewController.h; sourceTree = "<group>"; };
+		5723B36414ED250A00FB5ED3 /* TweetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetsViewController.m; sourceTree = "<group>"; };
+		5723B36514ED250A00FB5ED3 /* TweetsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetsViewController.xib; sourceTree = "<group>"; };
+		5723B36914ED2BB700FB5ED3 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		5723B36A14ED2BB700FB5ED3 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		579346F014ED0D17000920DA /* pios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		579346F414ED0D17000920DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		579346F614ED0D17000920DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		579346F814ED0D17000920DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		579346FC14ED0D17000920DA /* pios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pios-Info.plist"; sourceTree = "<group>"; };
+		579346FE14ED0D17000920DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5793470014ED0D17000920DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5793470214ED0D17000920DA /* pios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pios-Prefix.pch"; sourceTree = "<group>"; };
+		5793470314ED0D17000920DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5793470414ED0D17000920DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5793470B14ED0D18000920DA /* piosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = piosTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5793470C14ED0D18000920DA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5793471414ED0D18000920DA /* piosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "piosTests-Info.plist"; sourceTree = "<group>"; };
+		5793471614ED0D18000920DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5793471814ED0D18000920DA /* piosTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = piosTests.h; sourceTree = "<group>"; };
+		5793471914ED0D18000920DA /* piosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = piosTests.m; sourceTree = "<group>"; };
+		5793472414ED0D52000920DA /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		5793472514ED0D52000920DA /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		579346ED14ED0D17000920DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				579346F514ED0D17000920DA /* UIKit.framework in Frameworks */,
+				579346F714ED0D17000920DA /* Foundation.framework in Frameworks */,
+				579346F914ED0D17000920DA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5793470714ED0D18000920DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5793470D14ED0D18000920DA /* SenTestingKit.framework in Frameworks */,
+				5793470E14ED0D18000920DA /* UIKit.framework in Frameworks */,
+				5793470F14ED0D18000920DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5723B35914ED1F4500FB5ED3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5723B35A14ED1F4500FB5ED3 /* UsersViewController.h */,
+				5723B35B14ED1F4500FB5ED3 /* UsersViewController.m */,
+				5723B35C14ED1F4500FB5ED3 /* UsersViewController.xib */,
+				5723B36314ED250A00FB5ED3 /* TweetsViewController.h */,
+				5723B36414ED250A00FB5ED3 /* TweetsViewController.m */,
+				5723B36514ED250A00FB5ED3 /* TweetsViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5723B36814ED2BB700FB5ED3 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				5723B36914ED2BB700FB5ED3 /* JSONKit.h */,
+				5723B36A14ED2BB700FB5ED3 /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		579346E514ED0D17000920DA = {
+			isa = PBXGroup;
+			children = (
+				5793472714ED1A8B000920DA /* Lib */,
+				579346FA14ED0D17000920DA /* pios */,
+				5793471214ED0D18000920DA /* piosTests */,
+				579346F314ED0D17000920DA /* Frameworks */,
+				579346F114ED0D17000920DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		579346F114ED0D17000920DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				579346F014ED0D17000920DA /* pios.app */,
+				5793470B14ED0D18000920DA /* piosTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		579346F314ED0D17000920DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				579346F414ED0D17000920DA /* UIKit.framework */,
+				579346F614ED0D17000920DA /* Foundation.framework */,
+				579346F814ED0D17000920DA /* CoreGraphics.framework */,
+				5793470C14ED0D18000920DA /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		579346FA14ED0D17000920DA /* pios */ = {
+			isa = PBXGroup;
+			children = (
+				5793472314ED0D44000920DA /* Model */,
+				5723B35914ED1F4500FB5ED3 /* Views */,
+				5793470314ED0D17000920DA /* AppDelegate.h */,
+				5793470414ED0D17000920DA /* AppDelegate.m */,
+				579346FB14ED0D17000920DA /* Supporting Files */,
+			);
+			path = pios;
+			sourceTree = "<group>";
+		};
+		579346FB14ED0D17000920DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				579346FC14ED0D17000920DA /* pios-Info.plist */,
+				579346FD14ED0D17000920DA /* InfoPlist.strings */,
+				5793470014ED0D17000920DA /* main.m */,
+				5793470214ED0D17000920DA /* pios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5793471214ED0D18000920DA /* piosTests */ = {
+			isa = PBXGroup;
+			children = (
+				5793471814ED0D18000920DA /* piosTests.h */,
+				5793471914ED0D18000920DA /* piosTests.m */,
+				5793471314ED0D18000920DA /* Supporting Files */,
+			);
+			path = piosTests;
+			sourceTree = "<group>";
+		};
+		5793471314ED0D18000920DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5793471414ED0D18000920DA /* piosTests-Info.plist */,
+				5793471514ED0D18000920DA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5793472314ED0D44000920DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5793472414ED0D52000920DA /* Tweet.h */,
+				5793472514ED0D52000920DA /* Tweet.m */,
+				5723B36014ED230B00FB5ED3 /* User.h */,
+				5723B36114ED230B00FB5ED3 /* User.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5793472714ED1A8B000920DA /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				5723B36814ED2BB700FB5ED3 /* JSONKit */,
+			);
+			name = Lib;
+			path = pios/Lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		579346EF14ED0D17000920DA /* pios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5793471D14ED0D18000920DA /* Build configuration list for PBXNativeTarget "pios" */;
+			buildPhases = (
+				579346EC14ED0D17000920DA /* Sources */,
+				579346ED14ED0D17000920DA /* Frameworks */,
+				579346EE14ED0D17000920DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pios;
+			productName = pios;
+			productReference = 579346F014ED0D17000920DA /* pios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5793470A14ED0D18000920DA /* piosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5793472014ED0D18000920DA /* Build configuration list for PBXNativeTarget "piosTests" */;
+			buildPhases = (
+				5793470614ED0D18000920DA /* Sources */,
+				5793470714ED0D18000920DA /* Frameworks */,
+				5793470814ED0D18000920DA /* Resources */,
+				5793470914ED0D18000920DA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5793471114ED0D18000920DA /* PBXTargetDependency */,
+			);
+			name = piosTests;
+			productName = piosTests;
+			productReference = 5793470B14ED0D18000920DA /* piosTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		579346E714ED0D17000920DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 579346EA14ED0D17000920DA /* Build configuration list for PBXProject "pios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 579346E514ED0D17000920DA;
+			productRefGroup = 579346F114ED0D17000920DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				579346EF14ED0D17000920DA /* pios */,
+				5793470A14ED0D18000920DA /* piosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		579346EE14ED0D17000920DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				579346FF14ED0D17000920DA /* InfoPlist.strings in Resources */,
+				5723B35E14ED1F4500FB5ED3 /* UsersViewController.xib in Resources */,
+				5723B36714ED250A00FB5ED3 /* TweetsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5793470814ED0D18000920DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5793471714ED0D18000920DA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5793470914ED0D18000920DA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		579346EC14ED0D17000920DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5793470114ED0D17000920DA /* main.m in Sources */,
+				5793470514ED0D17000920DA /* AppDelegate.m in Sources */,
+				5793472614ED0D52000920DA /* Tweet.m in Sources */,
+				5723B35D14ED1F4500FB5ED3 /* UsersViewController.m in Sources */,
+				5723B36214ED230B00FB5ED3 /* User.m in Sources */,
+				5723B36614ED250A00FB5ED3 /* TweetsViewController.m in Sources */,
+				5723B36B14ED2BB700FB5ED3 /* JSONKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5793470614ED0D18000920DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5793471A14ED0D18000920DA /* piosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5793471114ED0D18000920DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 579346EF14ED0D17000920DA /* pios */;
+			targetProxy = 5793471014ED0D18000920DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		579346FD14ED0D17000920DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				579346FE14ED0D17000920DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5793471514ED0D18000920DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5793471614ED0D18000920DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5793471B14ED0D18000920DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5793471C14ED0D18000920DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5793471E14ED0D18000920DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pios/pios-Prefix.pch";
+				INFOPLIST_FILE = "pios/pios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5793471F14ED0D18000920DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pios/pios-Prefix.pch";
+				INFOPLIST_FILE = "pios/pios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5793472114ED0D18000920DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/pios.app/pios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pios/pios-Prefix.pch";
+				INFOPLIST_FILE = "piosTests/piosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5793472214ED0D18000920DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/pios.app/pios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pios/pios-Prefix.pch";
+				INFOPLIST_FILE = "piosTests/piosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		579346EA14ED0D17000920DA /* Build configuration list for PBXProject "pios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5793471B14ED0D18000920DA /* Debug */,
+				5793471C14ED0D18000920DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5793471D14ED0D18000920DA /* Build configuration list for PBXNativeTarget "pios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5793471E14ED0D18000920DA /* Debug */,
+				5793471F14ED0D18000920DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5793472014ED0D18000920DA /* Build configuration list for PBXNativeTarget "piosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5793472114ED0D18000920DA /* Debug */,
+				5793472214ED0D18000920DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 579346E714ED0D17000920DA /* Project object */;
+}
