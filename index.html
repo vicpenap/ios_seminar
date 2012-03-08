@@ -1,0 +1,1188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>iOS development</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/style.css" type="text/css"/>
+  
+    <link rel="stylesheet" href="file/sunlight.default.css" type="text/css"/>
+  
+
+  
+    <script type="text/javascript" src="file/sunlight-min.js"></script>
+  
+    <script type="text/javascript" src="file/sunlight.objective-c-min.js"></script>
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content frontpage center" ref="the_basics/01_the_basics/1">
+<h1>Introduction to iOS development</h1></div>
+</div><div class="slide" data-transition="none"><div class="content section center" ref="the_basics/01_the_basics/2">
+<h1>The Basics</h1>
+
+<ul>
+<li>What do I need?</li>
+<li>Objective-C</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content subsection center" ref="the_basics/01_the_basics/3">
+<h1>What do I need?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/01_the_basics/4">
+<h1>What do I need?</h1>
+
+<ul>
+<li><p><code>@required</code></p>
+
+<ul>
+<li>Mac OS X 10.6+</li>
+<li>XCode 4.2+</li>
+</ul>
+</li>
+<li><p><code>@optional</code></p>
+
+<ul>
+<li>Device with iOS 4.0+</li>
+<li>Paid iOS Program Membership</li>
+</ul>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content subsection center" ref="the_basics/01_the_basics/5">
+<h1>Objective-C</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/01_the_basics/6">
+<h1>Objective-C</h1>
+
+<ul>
+<li>Typed</li>
+<li>Object oriented, inspired by Smalltalk</li>
+<li>Superset of C. <em>Keep calm...</em></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content command" ref="the_basics/01_the_basics/7">
+
+
+<pre class="size-160 sunlight-highlight-objective-c">   
+    [array insertObject:anObject atIndex:0];
+    // where's C here?
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/01_the_basics/8">
+<h1>Methods Syntax</h1>
+
+<ul>
+<li>Calling a method</li>
+</ul>
+
+
+<p/>
+
+<pre class="sh_java"><code>// java
+anObject.aMethod(); </code></pre>
+
+<p/>
+
+<pre class="size-170 sunlight-highlight-objective-c">   
+    // obj-c
+    [anObject aMethod]; 
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/01_the_basics/9">
+<h1>Methods Syntax</h1>
+
+<ul>
+<li>Calling a method</li>
+</ul>
+
+
+<p/>
+
+<pre class="sh_java"><code>// java
+anObject.aMethod().anotherMethod(); </code></pre>
+
+<p/>
+
+<pre class="size-170 sunlight-highlight-objective-c">   
+    // obj-c
+    [[anObject aMethod] anotherMethod];
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/01_the_basics/10">
+<h1>Methods Syntax</h1>
+
+<ul>
+<li>Calling a method</li>
+</ul>
+
+
+<p/>
+
+<pre class="sh_java"><code>// java
+array.add(0,object); </code></pre>
+
+<p/>
+
+<pre class="size-170 sunlight-highlight-objective-c">   
+    // obj-c
+    [array insertObject:object atIndex:0];
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/01_the_basics/11">
+<h1>Interesting stuff</h1>
+
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Objective-C#Protocols">Protocols</a>
+
+<ul>
+<li>Very similar to the <code>interface</code> concept in Java.
+
+<ul>
+<li>You can define required and optional methods and properties.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Objective-C#Categories">Categories</a>
+
+<ul>
+<li>Allows extending a class' behavior...</li>
+<li>Or even overriding it :-)</li>
+<li>No subclassing needed.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/01_the_basics/12">
+<h1>Interesting stuff</h1>
+
+<ul>
+<li><a href="https://developer.apple.com/library/ios/#documentation/cocoa/Conceptual/Blocks/Articles/00_Introduction.html">Blocks</a>
+
+<ul>
+<li>Similar to <code>closures</code> in Ruby or Javascript.</li>
+</ul>
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Objective-C#Properties">Properties</a></li>
+</ul>
+
+
+<pre class="size-170 sunlight-highlight-objective-c">   
+        @property (retain) NSString *name;
+        ...
+        object.name = @"Slim Shady";
+        NSLog(@"My name is %@",object.name);
+</pre>
+
+
+<p/>
+
+<script type="text/javascript">
+    Sunlight.highlightAll();
+</script>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/02_mem_management/1">
+<h1>but...</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/02_mem_management/2">
+<h1>Explicit Memory Management</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/02_mem_management/3">
+<h1>Explicit Memory Management</h1>
+
+<ul>
+<li>Reference counting</li>
+<li>How?
+
+<ul>
+<li>Increase the object's reference counter when you start using it.</li>
+<li>Decrease the object's reference counter when you finish using it.</li>
+<li>When the counter reaches <code>0</code>, it will be automatically deallocated.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/02_mem_management/4">
+<h1>Explicit Memory Management</h1>
+
+<ul>
+<li><p>How do I increase the object's reference counter?</p>
+
+<ul>
+<li>Use <code>retain</code>: <code>[array retain];</code></li>
+<li>Use <code>init</code> constructors: <code>[[NSArray alloc] init]</code>.</li>
+</ul>
+</li>
+<li><p>How do I decrease the object's reference counter?</p>
+
+<ul>
+<li>Use <code>release</code>: <code>[array release];</code></li>
+<li>Use <code>autorelease</code>: <code>[array autorelease];</code></li>
+</ul>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="the_basics/02_mem_management/5">
+<h1>Explicit Memory Management</h1>
+
+<p><img src="./file/the_basics/memory_management.jpeg" alt="Memory Management"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/02_mem_management/6">
+<h1>Explicit Memory Management</h1>
+
+<ul>
+<li>Example</li>
+</ul>
+
+
+<pre class="size-150 sunlight-highlight-objective-c">
+        // Instanciates and increases reference counter
+        NSOperationQueue *q = [[NSOperationQueue alloc] init];
+
+        // uses object normally
+        [q addOperationWithBlock:^{
+            // do something in background
+        }];
+
+        // decreases reference counter
+        [q release];
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/02_mem_management/7">
+<h1>Explicit Memory Management</h1>
+
+<ul>
+<li>What is <code>autorelease</code> ?
+
+<ul>
+<li>It adds the object to the autorelease pool, to get released <em>later</em>.
+
+<ul>
+<li><em>The AppKit and UIKit frameworks automatically create a pool at the beginning of each event-loop iteration, such as a mouse down event or a tap, and drain it at the end.</em></li>
+</ul>
+</li>
+<li>So you can still use the object a bit more, but be careful.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="the_basics/02_mem_management/8">
+<h1>Explicit Memory Management</h1>
+
+<ul>
+<li>Anything else?</li>
+<li>Yes indeed! Memory management is <strong>optional</strong>.</li>
+<li>If you want, new <a href="https://developer.apple.com/library/mac/#releasenotes/ObjectiveC/RN-TransitioningToARC/_index.html#//apple_ref/doc/uid/TP40011226">ARC</a> will do everything for you :)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/03_objects/1">
+<h1>Objects</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/03_objects/2">
+<h1>Objects</h1>
+
+<ul>
+<li>Code separated in two parts
+
+<ul>
+<li><code>@interface</code> and <code>@implementation</code></li>
+</ul>
+</li>
+<li>Public objects must have their interface in <code>ObjectName.h</code>
+and the implementation in <code>ObjectName.m</code>.</li>
+<li>If you need private objects, you should define both parts in
+your <code>.m</code> file.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/03_objects/3">
+<h1>Tweet.h</h1>
+
+<pre class="size-160 sunlight-highlight-objective-c">
+    #import "User.h"
+
+    @interface Tweet
+    
+    @property (nonatomic, retain) User *author;
+    @property (nonatomic, retain) NSDate *date;
+    @property (nonatomic, retain) NSString *text;
+
+    - (Tweet *) initWithAuthor:(User *)author
+                                        text:(NSString *)text;
+    
+    + (NSArray *) getTweetsByAuthor:(User *)author; 
+
+    @end
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/03_objects/4">
+<h1>Tweet.m</h1>
+
+<pre class="size-160 sunlight-highlight-objective-c">
+    #import "Tweet.h"
+
+    @implementation Tweet
+    
+    @synthesize author;
+    @synthesize date, text;
+
+    // release all properties
+    - (void) dealloc 
+    {
+        self.author = nil; // no release here?
+        self.date = nil; // we'll talk about that
+        self.text = nil; // later 
+        
+        [super dealloc];    
+    }
+    
+    ...
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/03_objects/5">
+<h1>Tweet.m</h1>
+
+<pre class="size-160 sunlight-highlight-objective-c">
+    ...
+
+    - (Tweet *) initWithAuthor:(User *)aUser 
+                                       text:(NSString *)aText 
+    {
+        if (self = [super init]) {
+            self.author = aUser;
+            self.text = aText;
+        }
+        return self;    
+    }
+
+    + (NSArray *) getTweetsByAuthor:(User *)author 
+    {
+        // retrieve tweets ...  
+    }
+
+    @end
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/03_objects/6">
+<h1><a href="https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjectiveC/Chapters/ocProperties.html">Defining properties</a></h1>
+
+<pre class="size-170 sunlight-highlight-objective-c">
+    @property (nonatomic, retain) NSString *text;
+</pre>
+
+
+<ul>
+<li>Will generate accesors (getter and setter)
+
+<ul>
+<li>dot notation:
+
+<ul>
+<li><code>tweet.text</code></li>
+</ul>
+</li>
+<li>accesor methods:</li>
+</ul>
+</li>
+</ul>
+
+
+<pre class="size-160 sunlight-highlight-objective-c">
+            - (NSString *) text;
+            - (void) setText:(NSString *)text;
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/03_objects/7">
+<h1><a href="https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjectiveC/Chapters/ocProperties.html">Defining properties</a></h1>
+
+<ul>
+<li><code>@interface</code>
+
+<ul>
+<li><pre class="size-170 sunlight-highlight-objective-c">@property (attributes) type name;</pre>
+
+<ul>
+<li>attributes most used:
+
+<ul>
+<li><code>nonatomic</code>: synthesized accessors won't provide robust access to properties in a
+      multithreaded environment.</li>
+<li><code>retain</code>: generated setter will retain the new value (and release the previous one).
+      Use this for objects.</li>
+<li><code>assign</code>: generated setter will only assign the new value. Use this for scalar types.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/03_objects/8">
+<h1><a href="https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjectiveC/Chapters/ocProperties.html">Defining properties</a></h1>
+
+<ul>
+<li><code>@implementation</code>
+  <pre class="size-170 sunlight-highlight-objective-c">
+      @synthesize name;
+  </pre></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/03_objects/9">
+<h1><a href="https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjectiveC/Chapters/ocProperties.html">Defining properties</a></h1>
+
+<ul>
+<li>If using <code>retain</code> attribute, retains and releases are made by the generated accesors.
+
+<ul>
+<li>So even if you are managing memory manually, they will do it for you.
+
+<ul>
+<li>Which explains the <code>self.property = nil</code> in the previous <code>dealloc</code> method.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/03_objects/10">
+<h1><a href="https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjectiveC/Chapters/ocProperties.html">Defining properties</a></h1>
+
+<pre class="size-170 sunlight-highlight-objective-c">
+    @property (nonatomic, retain) NSString *text;
+</pre>
+
+
+<p/>
+
+<pre class="size-170 sunlight-highlight-objective-c">
+    - (void)setText:(NSString *)newText {
+        [newText retain]; // because of retain
+        [text release]; // because of retain
+        text = newText;
+    }
+    
+    - (NSString *)text {
+        return text;
+    }
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/03_objects/11">
+<h1>Defining methods</h1>
+
+<ul>
+<li>Class methods start with <code>+</code> sign</li>
+</ul>
+
+
+<pre class="size-150 sunlight-highlight-objective-c">
+    + (NSArray *) getTweetsByAuthor:(User *)author; 
+</pre>
+
+
+<ul>
+<li>Instance methods start with <code>-</code> sign</li>
+</ul>
+
+
+<pre class="size-150 sunlight-highlight-objective-c">
+    - (Tweet *) initWithText:(NSString *)text;
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/03_objects/12">
+<h1>Defining methods</h1>
+
+<ul>
+<li>Again, method definition in <code>@interface</code>.</li>
+<li>and method implementation in <code>@implementation</code>.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/03_objects/13">
+<h1>Defining methods</h1>
+
+<ul>
+<li>Method attributes:
+
+<ul>
+<li><code>(NSArray *)</code>, <code>(NSUInteger)</code>, <code>(int)</code>...</li>
+<li>If it is an object, it needs <code>*</code></li>
+<li>If it is an scalar, it doesn't need anything.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/03_objects/14">
+<h1>Constructors</h1>
+
+<ul>
+<li>Naming convention
+
+<ul>
+<li>Constructor with no arguments: <code>init</code></li>
+<li>Constructor with arguments</li>
+</ul>
+</li>
+</ul>
+
+
+<pre class="size-170 sunlight-highlight-objective-c">   
+             initWithArg1:(type1)arg1 
+                           arg2:(type2)arg2
+
+                                ...
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/03_objects/15">
+<h1>Constructors</h1>
+
+<ul>
+<li><code>@implementation</code></li>
+</ul>
+
+
+<pre class="size-170 sunlight-highlight-objective-c">   
+        - (Tweet *) initWithAuthor:(User *)aUser
+                                            text:(NSString *)aText 
+        {
+            if (self = [super init]) { // always
+                // your code here
+                self.author = aUser;
+                self.text = aText;
+            }
+            return self; // always
+        }
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/03_objects/16">
+<h1>Constructors</h1>
+
+<ul>
+<li>Using them:</li>
+</ul>
+
+
+<pre class="size-170 sunlight-highlight-objective-c">   
+        Tweet *t = [[Tweet alloc]&#xA0;
+                            initWithAuthor:aUser
+                                             text:@"Lorem ipsum"];
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/03_objects/17">
+<h1>Further reading</h1>
+
+<ul>
+<li><a href="http://cocoadevcentral.com/d/learn_objectivec/">Cocoa Dev Central: Learn Objective-C</a></li>
+<li><a href="https://developer.apple.com/library/mac/#referencelibrary/GettingStarted/Learning_Objective-C_A_Primer/_index.html">Apple Docs: Learning Objective-C</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_basics/04_enough">
+<h1>Enough</h1></div>
+</div><div class="slide" data-transition="none"><div class="content section center" ref="coding/01_intro/1">
+<h1>iOS Apps</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="coding/01_intro/2">
+<h1>Introduction</h1>
+
+<ul>
+<li>Most apps have lists.</li>
+<li>Most apps consume web services.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="coding/01_intro/3">
+<h1>Creating a list: The View</h1>
+
+<ul>
+<li>Lists are built with table views.</li>
+<li>Table views are composed by <code>sections</code>.
+
+<ul>
+<li>Each <code>section</code> is composed by <code>rows</code>.</li>
+</ul>
+</li>
+<li><code>indexPath</code> object will let you access them:
+
+<ul>
+<li><code>indexPath.section</code></li>
+<li><code>indexPath.row</code></li>
+</ul>
+</li>
+<li>Table views have two styles: <code>plain</code> and <code>grouped</code>.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="coding/01_intro/4">
+<h1>Creating a list: The View</h1>
+
+<p><img src="./file/coding/table_styles.png" alt="Table Styles"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="coding/01_intro/5">
+<h1>Creating a list: The Controller</h1>
+
+<ul>
+<li>Two key concepts about the tableView:
+
+<ul>
+<li><code>dataSource</code></li>
+<li><code>delegate</code></li>
+</ul>
+</li>
+<li>Both are protocols your table view controller must implement.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="coding/01_intro/6">
+<h1>Creating a list: The Controller</h1>
+
+<ul>
+<li><code>dataSource</code>
+
+<ul>
+<li>Provides the info needed to construct and populate the table.</li>
+<li><a href="https://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewDataSource_Protocol/Reference/Reference.html">UITableViewDataSource Protocol Reference</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="coding/01_intro/7">
+<h1>Creating a list: The Controller</h1>
+
+<ul>
+<li><code>delegate</code>
+
+<ul>
+<li>Allows the table view controller to manage selections, further
+table view configuration and other actions.</li>
+<li><a href="https://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UITableViewDelegate_Protocol/Reference/Reference.html">UITableViewDelegate Protocol Reference</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="coding/01_intro/8">
+<h1>Creating a web service consumer</h1>
+
+<ul>
+<li>Two main kinds of response formats: <code>XML</code> and <code>JSON</code>.</li>
+<li>There are third-party libraries for both of them:
+
+<ul>
+<li><code>XML</code>: <a href="http://troybrant.net/blog/2010/09/simple-xml-to-nsdictionary-converter/">XMLReader</a></li>
+<li><code>JSON</code>: <a href="https://github.com/johnezang/JSONKit">JSONKit</a>, <a href="https://github.com/stig/json-framework/">SBJson</a>...</li>
+</ul>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content section center" ref="the_app/01_lets_get_started/1">
+<h1>Let's get started!</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="the_app/01_lets_get_started/2">
+<h1>Writting an application</h1>
+
+<ul>
+<li>P&#xED;os: your twitter client</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="the_app/02_the_model/1">
+<h1>The Model</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="the_app/02_the_model/2">
+<h1>The Model</h1>
+
+<p><img src="./file/the_app/model.png" alt="Model"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/02_the_model/3">
+<h1>The Model</h1>
+
+<ul>
+<li><code>User.h</code></li>
+</ul>
+
+
+<pre class="size-160 sunlight-highlight-objective-c">
+    @interface User : NSObject
+    
+    @property (nonatomic, retain) NSString *username;
+    
+    - (User *) initWithUsername:(NSString *)username;
+    + (User *) userWithUsername:(NSString *)username;
+    
+    + (NSArray *) getUsers;
+    
+    @end
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/02_the_model/4">
+<h1>The Model</h1>
+
+<ul>
+<li><code>User.m</code></li>
+</ul>
+
+
+<pre class="size-160 sunlight-highlight-objective-c">
+    @implementation User
+    @synthesize username;
+    
+    - (void) dealloc {
+        self.username = nil;
+    
+        [super dealloc];
+    }
+    
+    - (User *) initWithUsername:(NSString *)aUsername {
+        if (self = [super init]) {
+            self.username = aUsername;
+        }
+        return self;
+    }   ...
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/02_the_model/5">
+<h1>The Model</h1>
+
+<ul>
+<li><code>User.m</code></li>
+</ul>
+
+
+<pre class="size-160 sunlight-highlight-objective-c">
+    ...
+
+    + (User *) userWithUsername:(NSString *)username {
+        return [[[User alloc] initWithUsername:username] 
+            autorelease];
+    }
+
+    @end
+</pre>
+
+
+<p/></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/02_the_model/6">
+<h1>The Model</h1>
+
+<ul>
+<li><code>Tweet.h</code></li>
+</ul>
+
+
+<pre class="size-160 sunlight-highlight-objective-c">
+    #import "User.h"
+    
+    @interface Tweet : NSObject
+    
+    @property (nonatomic, retain) User *author;
+    @property (nonatomic, retain) NSString *text;
+    @property (nonatomic, retain) NSDate *date;
+    
+    
+    - (Tweet *) initWithAuthor:(User *)author 
+                                        text:(NSString *)text
+                                        date:(NSDate *)date;
+    
+    + (NSArray *) getTweetsByAuthor:(User *)author;
+    
+    
+    @end
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/02_the_model/7">
+<h1>The Model</h1>
+
+<ul>
+<li><code>Tweet.m</code></li>
+</ul>
+
+
+<pre class="size-160 sunlight-highlight-objective-c">
+    @implementation Tweet
+    @synthesize author, text, date;
+    
+    - (void) dealloc 
+    {
+        self.author = nil;
+        self.text = nil;
+        self.date = nil;
+    
+        [super dealloc];
+    }
+    
+    ...
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/02_the_model/8">
+<h1>The Model</h1>
+
+<ul>
+<li><code>Tweet.m</code></li>
+</ul>
+
+
+<pre class="size-160 sunlight-highlight-objective-c">
+    ...
+    
+    - (Tweet *) initWithAuthor:(User *)aUser 
+                                        text:(NSString *)aText 
+                                        date:(NSDate *)aDate 
+    {
+        if (self = [super init]) {
+            self.author = aUser;
+            self.text = aText;
+            self.date = aDate;
+        }
+        return self;
+    }
+    
+    @end
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/02_the_model/9">
+<h1>The Model</h1>
+
+<ul>
+<li><p><code>getTweetsByAuthor:</code> obtains tweets from twitter api</p>
+
+<ul>
+<li><a href="http://jsonviewer.stack.hu/#http://api.twitter.com/statuses/user_timeline.json?include_rts=true&amp;screen_name=vicpenap&amp;page=1&amp;count=5">http://api.twitter.com/statuses/user<em>timeline.json?
+include</em>rts=true&amp;screen_name=%@
+&amp;page=%d&amp;count=%d</a></li>
+</ul>
+</li>
+<li><p>Parsing JSON</p></li>
+</ul>
+
+
+<pre class="size-150 sunlight-highlight-objective-c">
+    // obtain response from the source url
+    NSString *response = [NSString stringWithContentsOfURL:
+                                                     [NSURL URLWithString:url] 
+                                      encoding:NSUTF8StringEncoding 
+                                           error:&amp;error];
+    
+    ...         
+</pre>
+
+
+<p/></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/02_the_model/10">
+<h1>The Model</h1>
+
+<ul>
+<li>Parsing JSON</li>
+</ul>
+
+
+<pre class="size-150 sunlight-highlight-objective-c">
+    ...
+    
+    NSArray *parsedResponse = [response objectFromJSONString];
+    for (NSDictionary *parsedTweet in parsedResponse)
+    {
+        NSDate *date = [formatter dateFromString:
+            [parsedTweet objectForKey:@"created_at"]];
+    
+        NSString *text = [[parsedTweet objectForKey:@"text"] 
+            stringByTrimmingCharactersInSet:
+            [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    }
+    
+</pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="the_app/03_views_and_controllers/1">
+<h1>Views and Controllers</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/03_views_and_controllers/2">
+<h1>The User Controller</h1>
+
+<ul>
+<li>Has <code>@property NSArray *users</code>.</li>
+<li>Loads the users when the view is loaded.</li>
+<li>Implements <code>UITableViewDataSource</code> to populate the table.</li>
+<li>Implements <code>UITableViewDelegate</code> to add behavior.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/03_views_and_controllers/3">
+<h1>The User Controller</h1>
+
+<ul>
+<li><code>UITableViewDataSource</code>
+
+<ul>
+<li>numberOfSections:
+<pre class="size-150 sunlight-highlight-objective-c">
+      1
+</pre></li>
+<li>numberOfRowsInSection:
+<pre class="size-150 sunlight-highlight-objective-c">
+      [self.users count]
+</pre></li>
+<li>cellForRowAtIndexPath:
+<pre class="size-150 sunlight-highlight-objective-c">
+      [self.users objectAtIndex:indexPath.row]
+</pre></li>
+</ul>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/03_views_and_controllers/4">
+<h1>The User Controller</h1>
+
+<ul>
+<li><code>UITableViewDelegate</code>
+
+<ul>
+<li>didSelectRowAtIndexPath:
+
+<ul>
+<li>Opens tweets view for
+<pre class="size-150 sunlight-highlight-objective-c">
+  [self.users objectAtIndex:indexPath.row]
+</pre></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/03_views_and_controllers/5">
+<h1>The Tweets Controller</h1>
+
+<ul>
+<li>Has <code>@property User *user</code> and <code>NSArray *tweets</code>.</li>
+<li>Loads tweets when the view is loaded.</li>
+<li>Implements <code>dataSource</code> and <code>delegate</code> in the same way than the User Controller.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/03_views_and_controllers/6">
+<h1>Putting this all together</h1>
+
+<ul>
+<li>iOS apps have, at least, one window (<code>UIWindow</code>)</li>
+<li>Windows have a <code>rootViewController</code> property.
+
+<ul>
+<li>It is the app's main view controller.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/03_views_and_controllers/7">
+<h1>Putting this all together</h1>
+
+<ul>
+<li>Something like <code>window.rootViewController = usersViewController</code> would be ok...
+
+<ul>
+<li>But if we need navigation between views, it is not a good approach.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="the_app/03_views_and_controllers/8">
+<h1>Putting this all together</h1>
+
+<ul>
+<li><code>UINavigationController</code>
+
+<ul>
+<li>It manages the navigation of hierarchical content.</li>
+</ul>
+</li>
+</ul>
+
+
+<p><img src="./file/the_app/navigation_interface.jpeg" alt=""/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/03_views_and_controllers/9">
+<h1>Putting this all together</h1>
+
+<ul>
+<li><code>UINavigationController</code></li>
+</ul>
+
+
+<pre class="size-120 sunlight-highlight-objective-c">
+    UsersViewController *usersViewController = [[UsersViewController alloc] 
+                                                            initWithNibName:@"UsersViewController" bundle:nil];
+    
+    self.window.rootViewController = [[[UINavigationController alloc] 
+                                            initWithRootViewController:usersViewController] 
+                                            autorelease];
+   
+   [usersViewController release];
+</pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content subsection center" ref="the_app/04_multithreading/1">
+<h1>Multithreading</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/04_multithreading/2">
+<h1>UI thread</h1>
+
+<ul>
+<li>All your code runs in the main thread by default.</li>
+<li>The UI runs in the main thread.</li>
+<li>You should leave the UI thread as free as possible.</li>
+<li>Network connections block the main thread.
+
+<ul>
+<li>Any code can block the main thread, indeed.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/04_multithreading/3">
+<h1>NSOperations &amp; Queues</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/04_multithreading/4">
+<h1>NSOperations &amp; Queues</h1>
+
+<ul>
+<li>With <code>NSOperations</code> and <code>NSOperationQueues</code> you can easily run
+code in background.
+
+<ul>
+<li>And even easier if you use blocks :)</li>
+</ul>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="the_app/04_multithreading/5">
+<h1>NSOperations &amp; Queues</h1>
+
+<pre class="size-150 sunlight-highlight-objective-c">
+    self.loading = YES;
+    [self.tableView reloadData];
+    
+    NSOperationQueue *q = [[NSOperationQueue alloc] init];
+    [q addOperationWithBlock:^{
+        NSArray *tweetsByAuthor = [Tweet getTweetsByAuthor:
+                                                                        self.user];
+    
+        // refresh the view.    
+        // this is related with the UI, so it has to run
+        // in main thread.
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            self.loading = NO;
+            self.tweets = tweetsByAuthor;
+            [self.tableView reloadData];
+        }];
+    }];
+    [q release];
+</pre>
+</div>
+</div><div class="slide" data-transition="none"><div class="content section" ref="end/01_end/1">
+<h1>Summary</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="end/01_end/2">
+<h1>What have we learned?</h1>
+
+<ul>
+<li>We've learned the basics of Objective-c.</li>
+<li>We've learned to manage memory correctly.</li>
+<li>We've learned to make a simple table view that consumes data from an API.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="end/01_end/3">
+<h1>What do we have to learn?</h1>
+
+<ul>
+<li>Using iVars.</li>
+<li>Using categories.</li>
+<li>Unit testing.</li>
+<li>Reading data from a file.</li>
+<li>Persisting data.</li>
+<li>...</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content section center" ref="end/01_end/4">
+<p><img src="./file/end/thats-all-folks.jpg" alt="thats all"/></p></div>
+</div></div>
+
+</body>
+</html>

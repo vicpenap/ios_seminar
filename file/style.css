@@ -1,0 +1,72 @@
+body {
+	font-family:  'URWGroteskTExtLigWid', Arial;
+	font-size:  14px;
+	line-height:  3.5em;
+	color:  #444;
+}
+
+/*Use this for the first slide*/
+.frontpage h1 {
+	background: #a4d520;
+	padding: 50px;
+	line-height:  1em;
+}
+
+/*Use this in a section's introductory slide */
+.section h1 {
+	background: #faaf01;
+	padding: 30px;
+	margin: 80px;
+	line-height:  1em;
+}
+
+.subsection h1 {
+	background: #7f7f7f;
+	padding: 30px;
+	margin: 80px;
+	line-height:  1em;
+}
+
+.sunlight-objective-c > span {
+	line-height: 120%;	
+}
+
+.size-100 span {
+	font-size: 100% !important;
+} 
+.size-110 span {
+	font-size: 110% !important;
+} 
+.size-120 span {
+	font-size: 120% !important;
+} 
+.size-130 span {
+	font-size: 130% !important;
+} 
+.size-140 span {
+	font-size: 140% !important;
+}
+
+.size-150 span {
+	font-size: 150% !important;
+} 
+.size-160 span {
+	font-size: 160% !important;
+} 
+.size-170 span {
+	font-size: 170% !important;
+} 
+.size-180 span {
+	font-size: 180% !important;
+} 
+.size-200 span {
+	font-size: 200% !important;
+} 
+
+pre, code, h1, strong {
+	color: black;
+}
+
+.section img {
+	width: 100%;
+}
