@@ -1,0 +1,7 @@
+.DS_Store
+pios/pios.xcodeproj/xcuserdata/
+pios/pios.xcodeproj/project.xcworkspace/xcuserdata/
+build/
+pios/pios.xcodeproj/*.mode1v3
+pios/pios.xcodeproj/*.pbxuser
+
